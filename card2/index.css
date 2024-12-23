@@ -1,0 +1,82 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Set background color for the page */
+  body {
+    background-color: #9999be86;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Profile card container */
+  .profile-card {
+    background-color: #dd8787;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 30%;  /* Set card width as a percentage of the viewport */
+    padding: 4%;  /* Padding also in percentage to make it responsive */
+    font-size: 1em;  /* Use relative font-size */
+    color: #333;
+  }
+  
+  /* Profile header section with image and info */
+  .profile-header {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  /* Center the content horizontally */
+    margin-bottom: 4%;
+    flex-direction: column;
+  }
+  
+  /* Profile picture styling */
+  .profile-img {
+    width: 110%;  /* Set image width to 20% of the card's width */
+    height: auto;
+    border-radius: 10%;
+    object-fit: cover;
+    margin-right: 5%;
+  }
+  
+  /* Profile info section (name, age) */
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .name {
+    font-size: 1.4em;  /* Font size in em to scale with card */
+    font-weight: bold;
+  }
+  
+  .age {
+    color: #777;
+    font-size: 1em;  /* Slightly smaller font for age */
+  }
+  
+  /* Profile details section */
+  .profile-details p {
+    margin-bottom: 2%;
+    line-height: 1.5;
+  }
+  
+  /* Contact info section */
+  .contact-info p {
+    margin-top: 2%;
+    line-height: 1.5;
+    font-size: 0.9em;  /* Slightly smaller font for contact info */
+    color: #555;
+  }
+  
+  .contact-info strong {
+    color: #333;
+  }
+  

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D Box</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+      perspective: 800px; /* Perspective for the 3D effect */
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      background: #3498db;
+      transform: rotateX(45deg) rotateY(45deg);
+      transform-style: preserve-3d; /* Ensures child elements retain 3D effect */
+    }
+
+    .box::before, .box::after {
+      content: '';
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: rgba(0, 0, 0, 0.1);
+    }
+
+    .box::before {
+      transform: translateZ(-50px);
+    }
+
+    .box::after {
+      transform: translateZ(50px);
+    }
+  </style>
+</head>
+<body>
+  <div class="box"></div>
+</body>
+</html>
